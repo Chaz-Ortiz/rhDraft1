@@ -1,0 +1,165 @@
+<!-- res/layout/activity_role.xml -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/offwhite2" />
+
+    <!-- Vertical LinearLayout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="719dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".model.Act_Activity">
+
+        <!-- Space for Separation -->
+        <TextView
+            style="@style/LogoTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="113dp"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="20dp"
+            android:text="BANK"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <!-- Image -->
+        <ImageView
+            android:layout_width="162dp"
+            android:layout_height="140dp"
+            android:rotation="0"
+            android:rotationX="0"
+            android:rotationY="0"
+            android:src="@drawable/bootstranspatent" />
+
+        <!-- Horizontal LinearLayout for deposit and transfer buttons -->
+
+        <!-- Account Info -->
+
+        <LinearLayout
+            android:layout_width="354dp"
+            android:layout_height="12dp"
+            android:gravity="start|top"
+            android:orientation="horizontal"
+            tools:context=".MainActivity">
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/act1or2_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="Account Info Here"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <!-- Horizontal LinearLayout for Account Total -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|top"
+            android:orientation="horizontal"
+            tools:context=".MainActivity">
+
+            <TextView
+                style="@style/smallTextStyleBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="Account Total:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            <TextView
+                android:id="@+id/accountTotal_text"
+                style="@style/smallTextStyleBlack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="15dp"
+                android:text="$10000000"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        </LinearLayout>
+
+        <!-- Transaction History Title -->
+        <TextView
+            style="@style/CustomTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:padding="15dp"
+            android:text="Transaction History:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <!-- ScrollView for Transaction History -->
+        <ScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="388dp"
+            android:layout_height="134dp">
+
+            <TextView
+                android:id="@+id/act_text"
+                style="@style/smallTextStyleBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        </ScrollView>
+
+        <!-- Space for Separation -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <!-- Horizontal LinearLayout for Home and Log Out Buttons -->
+        <LinearLayout
+            android:layout_width="354dp"
+            android:layout_height="100dp"
+            android:gravity="start|top"
+            android:orientation="horizontal"
+            tools:context=".MainActivity">
+
+            <!-- Home Button -->
+            <Button
+                android:id="@+id/homeAct_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="24dp"
+                android:text="Home"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            <!-- Log Out Button -->
+            <Button
+                android:id="@+id/logOutAct_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="24dp"
+                android:text="Log Out"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        </LinearLayout>
+
+        <!-- Space for Separation -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="13dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

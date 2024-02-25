@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="button_color_1">#4682B4</color> <!-- capt america -->
+    <color name="button_color_2">#009900</color> <!-- hulk -->
+    <color name="button_color_3">#3366FF</color> <!-- thor -->
+    <color name="button_color_4">#EE82EE</color> <!-- black widow -->
+
+
+    <color name="button_color_5">#daa520</color> <!-- dr strange -->
+    <color name="button_color_6">#FFD700</color> <!-- iron man -->
+    <color name="button_color_7">#7744AA</color> <!-- black panther -->
+    <color name="button_color_8">#A93226</color> <!-- hawkeye -->
+
+
+    <color name="button_color_69">#009900</color> <!-- Blue color -->
+    <color name="button_color_420">#008080</color> <!-- Blue color -->
+    <color name="button_color_1337">#008080</color> <!-- Blue color -->
+    <!-- Add more colors as needed -->
+
+
+</resources>

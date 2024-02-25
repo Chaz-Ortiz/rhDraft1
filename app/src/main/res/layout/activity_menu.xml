@@ -1,0 +1,211 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/offwhite2" />
+
+    <!-- Vertical LinearLayout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".model.Role_Activity">
+
+        <!-- App Title -->
+        <TextView
+            style="@style/LogoTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="133dp"
+            android:padding="24dp"
+            android:text="BANK"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+
+
+        <!-- Logo Image -->
+
+        <!-- Horizontal LinearLayout for Welcome Message -->
+        <ImageView
+            android:layout_width="172dp"
+            android:layout_height="102dp"
+            android:src="@drawable/bananatransparent" />
+
+        <TextView
+            android:id="@+id/timestamp_text"
+            style="@style/CustomTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:gravity="center"
+            android:text=""
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <LinearLayout
+            android:layout_width="354dp"
+            android:layout_height="75dp"
+            android:gravity="start|top"
+            android:orientation="horizontal"
+            tools:context=".MainActivity">
+
+            <!-- Welcome Message -->
+            <TextView
+                style="@style/smallTextStyleBlack"
+                android:layout_width="4dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="24dp"
+                android:text="Welcome,"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            <!-- User Name -->
+            <TextView
+                android:id="@+id/name_text"
+                style="@style/smallTextStyleBlack"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="24dp"
+                android:text="User name Here!"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        </LinearLayout>
+
+        <!-- Space for Separation -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- ScrollView -->
+        <ScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="349dp"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <!-- Vertical LinearLayout inside ScrollView -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Bank Accounts Title -->
+                <TextView
+                    style="@style/CustomTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bank Accounts:"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <!-- Account 1 -->
+                <TextView
+                    android:id="@+id/role1_text"
+                    style="@style/CustomTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Checking"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <!-- Buttons -->
+                <Button
+                    android:id="@+id/actI_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:text="Checking Account"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+                <TextView
+                    android:id="@+id/role2_text"
+                    style="@style/CustomTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Savings"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <Button
+                    android:id="@+id/actII_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:text="Savings Account"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+                <Button
+                    android:id="@+id/creditCard_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:text="Credit Card"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+                <Button
+                    android:id="@+id/autoLoan_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:text="Auto Loan"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+                <Button
+                    android:id="@+id/autoInsurance_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="24dp"
+                    android:text="Auto Insurance"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <!-- Space for Separation -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <!-- Horizontal LinearLayout for Home and Log Out Buttons -->
+        <LinearLayout
+            android:layout_width="354dp"
+            android:layout_height="100dp"
+            android:gravity="start|top"
+            android:orientation="horizontal"
+            tools:context=".MainActivity">
+
+            <!-- Home Button -->
+            <Button
+                android:id="@+id/home_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="24dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:text="Home"/>
+
+            <!-- Log Out Button -->
+            <Button
+                android:id="@+id/logOut_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="24dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:text="Log Out"/>
+
+        </LinearLayout>
+
+        <!-- Space for Separation -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
