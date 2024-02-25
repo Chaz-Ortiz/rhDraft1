@@ -152,6 +152,8 @@ public class MainActivity extends AppCompatActivity {
         handler.post(timestampRunnable);
     }
 
+    // ok I changed this
+
     private void updateTimestamp() {
         // Get the current time
         long currentTimeMillis = System.currentTimeMillis();
