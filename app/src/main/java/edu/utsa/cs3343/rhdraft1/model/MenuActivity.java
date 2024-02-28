@@ -63,7 +63,7 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
      * the activity, including setting up UI elements and handling button clicks.
      *
      * @param savedInstanceState A Bundle containing the activity's previously
-     *                           saved state, if there was any.
+     * saved state, if there was any.
      */
     @SuppressLint("MissingInflatedId")
     @Override
@@ -167,7 +167,7 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
                     }
                 });
 
-                // Schedule the next update after 10 seconds
+                // Schedule the next update after 1 second
                 handler.postDelayed(this, 1000);
             }
         };
@@ -255,7 +255,7 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         // go back to the MainActivity and clear login credentials
         Intent intent = new Intent(MenuActivity.this, MainActivity.class);
         startActivity(intent);
-        // You may want to add additional logic to clear user credentials
+        // additional logic to clear user credentials
     }
 
     @Override

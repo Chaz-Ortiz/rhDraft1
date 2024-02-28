@@ -16,7 +16,7 @@
 // ╚█████╔╝██║  ██╗   ██║   ██║║███████
 //  ╚════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝╘══════╝
 /**
- *  RowdyHacks 2024
+ *  RowdyHacks 2024 💾
  */
 
 package edu.utsa.cs3343.rhdraft1;
@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
         timestampTextView = findViewById(R.id.timestamp_text);
         handler = new Handler(Looper.getMainLooper());
 
-        // Array of dot colors
+        // Array of button colors
         int[] dotColors = new int[]{
                 R.color.button_color_69,
         };
@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
                 findViewById(R.id.Login_button),
         };
 
-        // Set up click listeners for each dot
+        // Set up click listeners for each button
         for (int i = 0; i < buttons.length; i++) {
             final int dotIndex = i;
 
@@ -115,16 +115,11 @@ public class MainActivity extends AppCompatActivity {
             });
         }
 
-        // Initialize timestamp TextView
-        //timestampTextView = findViewById(R.id.timestamp_text);
-
         // Initialize handler
         handler = new Handler();
 
         // Start updating timestamp using a separate thread
         startUpdatingTimestamp();
-
-        //Login_button = findViewById(R.id.Login_button);
 
         // Initialize the UserBank and load user data from the CSV file
         userBank = new UserBank();
@@ -143,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
 
-                // Schedule the next update after 10 seconds
+                // Schedule the next update after 1 second
                 handler.postDelayed(this, 1000);
             }
         };
@@ -152,14 +147,12 @@ public class MainActivity extends AppCompatActivity {
         handler.post(timestampRunnable);
     }
 
-    // ok I changed this
-
     private void updateTimestamp() {
         // Get the current time
         long currentTimeMillis = System.currentTimeMillis();
         Date date = new Date(currentTimeMillis);
 
-        // Format the time as you desire
+        // Format the time
         SimpleDateFormat dateFormat = new SimpleDateFormat("MMMM dd, yyyy HH:mm:ss", Locale.getDefault());
         String formattedTime = dateFormat.format(date);
 
@@ -191,7 +184,7 @@ public class MainActivity extends AppCompatActivity {
      * @param user The authenticated User object.
      */
     private void openRoleActivity(User user) {
-        // Create an Intent for Role_Activity
+        // Create an Intent for Role_Activity (now menu activity)
         Intent intent = new Intent(this, MenuActivity.class);
 
         // Pass the user object as an extra
@@ -200,7 +193,7 @@ public class MainActivity extends AppCompatActivity {
         // Retrieve the roles from the user object
         ArrayList<String> roles = user.getRoles();
 
-        // Check if the user has roles and pass them as extras
+        // Check if the user has roles and pass them as extras  (this used to be roles in a different program, need to change?)
         if (roles != null && roles.size() >= 2) {
             intent.putExtra("role1", roles.get(0));
             intent.putExtra("role2", roles.get(1));
@@ -216,11 +209,11 @@ public class MainActivity extends AppCompatActivity {
 
         // Display a toast for individual failed attempts
         if (consecutiveFailedAttempts <= 3) {
-            // Only show "Authentication failed" message for the first 2 failed attempts
+            // Only show "Authentication failed" message for the first 3 failed attempts
             Toast.makeText(MainActivity.this, "Authentication failed. Please try again.", Toast.LENGTH_SHORT).show();
         }
 
-        // Check if there are 3 consecutive failed attempts
+        // Check if there are >3 consecutive failed attempts
         if (consecutiveFailedAttempts > 3) {
             // Display an alert for unusual activity
             Toast.makeText(MainActivity.this, "Unusual activity detected. Maximum failed login attempts.", Toast.LENGTH_LONG).show();
