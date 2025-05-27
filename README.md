@@ -36,7 +36,7 @@ Welcome to the official GitHub repository for the **Chonky Boyz Financial Bank**
 
 1. **Clone the repo**:
    ```bash
-   git clone https://github.com/yourusername/chonkyboyz-financial-bank.git
+   git clone https://github.com/Chaz-Ortiz/rhDraft1/
 
 ---
 
