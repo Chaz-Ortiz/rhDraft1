@@ -29,12 +29,12 @@ The **transaction history** is organized using a **custom implementation of the 
 
 ## 📱 Features
 
-- 🕒 **Live Clock UI**: Real-time clock runs in a separate thread for consistent updates
-- 🏦 **Account Overview**: Displays account name and current balance
-- 📄 **Transaction History**: Easy-to-read list of recent transactions
-- 🔁 **Smooth Navigation**: Quickly return to the home dashboard
-- 🔐 **Secure Logout**: Clean session termination on sign-out
-- 🔍 **Vision-Friendly UI**: Large text and bold images for accessibility
+- 🕒 **Live Clock UI**: Real-time clock runs in a separate thread to ensure smooth and accurate time display without blocking the main UI thread
+- 🏦 **Account Overview**: Displays the user’s account name and total balance clearly
+- 📄 **Transaction History**: Sorted using a custom **Merge Sort** implementation in Java for optimal performance; handles large datasets efficiently with a time complexity of **O(n log n)**
+- 🔁 **Smooth Navigation**: Easily return to the home screen or move between views without delay
+- 🔐 **Secure Logout**: Cleanly ends the session and returns to the login screen
+- 🔍 **Vision-Friendly UI**: Large, high-contrast text and images designed for accessibility, especially for users with visual impairments
 
 ---
 
