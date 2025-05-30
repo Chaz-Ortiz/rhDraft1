@@ -6,7 +6,15 @@ Welcome to the official repository for the **Chonky Boyz Financial Bank** Androi
 
 This app features a **multithreaded user interface**, where a **real-time clock** is displayed on-screen via a dedicated background thread. This ensures responsive UI updates without blocking the main thread, improving both performance and user experience.
 
-Additionally, the interface has been redesigned with **large text and high-contrast images**, offering enhanced **accessibility for vision-impaired users** on mobile devices.
+The interface also includes **large, high-contrast text and images** to improve accessibility for users with visual impairments.
+
+The **transaction history** is organized using a **custom implementation of the Merge Sort algorithm** in Java. Merge Sort is a **divide-and-conquer** algorithm with a predictable time complexity of **O(n log n)** in all cases (worst, average, and best). This makes it ideal for ensuring fast and stable performance when sorting large datasets, like detailed transaction logs.
+
+#### 🔍 Why Merge Sort?
+
+- ✅ **Stable sort**: Maintains the relative order of equal elements (important for transaction ties)
+- ⚡ **Consistent performance**: Unlike quicksort, Merge Sort does not degrade to O(n²) in the worst case
+- 📈 **Predictable scaling**: Efficient even as the number of transactions grows
 
 ---
 
@@ -27,7 +35,6 @@ Additionally, the interface has been redesigned with **large text and high-contr
 - 🔁 **Smooth Navigation**: Quickly return to the home dashboard
 - 🔐 **Secure Logout**: Clean session termination on sign-out
 - 🔍 **Vision-Friendly UI**: Large text and bold images for accessibility
-- 🎨 **Custom Branding**: Unique “Chonky Boyz” visual theme and logo
 
 ---
 
