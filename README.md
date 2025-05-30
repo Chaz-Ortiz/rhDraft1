@@ -6,8 +6,11 @@ Welcome to the official GitHub repository for the **Chonky Boyz Financial Bank**
 
 ## 📸 Screenshots
 ![Screenshot_loginDec26 2023](https://github.com/user-attachments/assets/ed80e4c0-f543-4f43-827f-63e556bde15f)
+
+![Screenshot_homeDEC27 2023](https://github.com/user-attachments/assets/62f5ce9f-c4ca-4e8a-a9f1-31d79e8875b8)
+
 ![Screenshotmenu](https://github.com/user-attachments/assets/3250b695-7fe5-4ea2-8bf1-1740c90ce280)
-![chazBankAccountsLight](https://github.com/user-attachments/assets/26fbb7fc-ab24-425e-b223-ab4278c665f4)
+
 ![ScreenshotAccount](https://github.com/user-attachments/assets/8dc13860-d0c4-40a6-9a71-3e7585b2784c)
 
 ---
