@@ -10,7 +10,7 @@ The interface also includes **large, high-contrast text and images** to improve 
 
 The **transaction history** is organized using a **custom implementation of the Merge Sort algorithm** in Java. Merge Sort is a **divide-and-conquer** algorithm with a predictable time complexity of **O(n log n)** in all cases (worst, average, and best). This makes it ideal for ensuring fast and stable performance when sorting large datasets, like detailed transaction logs.
 
-#### Why Merge
+#### Merge Sort
 
 - **Stable sort**: Maintains the relative order of equal elements (important for transaction ties)
 - **Consistent performance**: Unlike quicksort, Merge Sort does not degrade to O(n²) in the worst case
